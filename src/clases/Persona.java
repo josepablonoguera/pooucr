@@ -9,7 +9,7 @@ import java.util.Date;
  */
 public class Persona {
     
-    //Datos perosonales
+    //Datos personales
     private String cedula;    
     private String nombreCompleto;
     private Date fechaNacimiento;
@@ -22,15 +22,14 @@ public class Persona {
     private String direccion;
     private String correoElectronico;
     
-    //Metodo de pago
-    private String tipoPago;
+   
 
     public Persona() {
     }
 
     public Persona(String cedula, String nombreCompleto, Date fechaNacimiento, 
             boolean discapacidad, String telefono, String direccion, 
-            String correoElectronico, String tipoPago) {
+            String correoElectronico) {
         this.cedula = cedula;
         this.nombreCompleto = nombreCompleto;
         this.fechaNacimiento = fechaNacimiento;
@@ -38,7 +37,7 @@ public class Persona {
         this.telefono = telefono;
         this.direccion = direccion;
         this.correoElectronico = correoElectronico;
-        this.tipoPago = tipoPago;
+       
     }
 
     /**
@@ -139,19 +138,16 @@ public class Persona {
         this.correoElectronico = correoElectronico;
     }
 
-    /**
-     * @return the tipoPago
-     */
-    public String getTipoPago() {
-        return tipoPago;
+    @Override
+    public String toString() {
+        return "Persona{" + "cedula=" + cedula + ", nombreCompleto=" + nombreCompleto + ", fechaNacimiento=" + fechaNacimiento + ", discapacidad=" + discapacidad + ", telefono=" + telefono + ", direccion=" + direccion + ", correoElectronico=" + correoElectronico + '}';
     }
 
-    /**
-     * @param tipoPago the tipoPago to set
-     */
-    public void setTipoPago(String tipoPago) {
-        this.tipoPago = tipoPago;
-    }
+   
+
+  
+    
+    
     
     
     
