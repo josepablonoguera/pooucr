@@ -32,9 +32,7 @@ public class Manager extends Employee{
         this.bonus = bonus;
     }
 
-    public Manager(double bonus) {
-        this.bonus = bonus;
-    }
+
 
     @Override
     public String toString() {

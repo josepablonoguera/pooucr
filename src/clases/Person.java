@@ -19,6 +19,11 @@ public class Person {
     private String id;    
 
     public Person() {
+        this.disability = false;
+        this.birthday = null;
+        this.contact = null;
+        this.fullName = "No Registrado";
+        this.id = "No Registrado";
     }
 
     public Person(boolean disability, Date birthday, ContactInformation contact,

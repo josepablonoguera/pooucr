@@ -1,10 +1,8 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
 package parqueo;
-
-import clases.Costumer;
-import clases.Manager;
-import clases.Person;
-import java.util.ArrayList;
 
 /**
  *
@@ -12,12 +10,11 @@ import java.util.ArrayList;
  */
 public class Principal {
 
-    ArrayList <Person> persons = new ArrayList();
-    
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-       persons.add(new Costumer(idCostumer, 0, paymentType, true, birthday, 
-               contact, fullName, id));
-       persons.add(new Manager(0, idEmployee, true, birthday, contact, fullName, id));
+        System.out.println("d");
     }
     
 }
