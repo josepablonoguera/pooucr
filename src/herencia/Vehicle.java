@@ -25,7 +25,8 @@ public class Vehicle {
     public Vehicle() {
     }
 
-    public Vehicle(int capacity, double weight, String brand, String color, String model, String transmission, String vim) {
+    public Vehicle(int capacity, double weight, String brand, String color, 
+            String model, String transmission, String vim) {
         this.capacity = capacity;
         this.weight = weight;
         this.brand = brand;

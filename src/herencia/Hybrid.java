@@ -8,7 +8,7 @@ package herencia;
  *
  * @author pablonoguera
  */
-public class Hybrid extends Vehicle implements ElectricInterfaz, CombustionInterfaz{
+public class Hybrid extends Vehicle implements ElectricInterfaz, CombustionInterfaz, SedanInterface{
     
     private double chargeVelocity;
 
@@ -67,6 +67,16 @@ public class Hybrid extends Vehicle implements ElectricInterfaz, CombustionInter
 
     public Hybrid(int capacity, double weight, String brand, String color, String model, String transmission, String vim) {
         super(capacity, weight, brand, color, model, transmission, vim);
+    }
+
+    @Override
+    public String getStyle() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setStyle(String style) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

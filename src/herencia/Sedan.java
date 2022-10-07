@@ -8,7 +8,7 @@ package herencia;
  *
  * @author pablonoguera
  */
-public class Sedan extends Combustion {
+public class Sedan extends Combustion implements SedanInterface {
     
     private String style;
 
@@ -29,6 +29,7 @@ public class Sedan extends Combustion {
     /**
      * @return the style
      */
+    @Override
     public String getStyle() {
         return style;
     }
@@ -36,6 +37,7 @@ public class Sedan extends Combustion {
     /**
      * @param style the style to set
      */
+    @Override
     public void setStyle(String style) {
         this.style = style;
     }
