@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="herencia">
+  <ClassDiagramComponents>
+    <Class name="Hybrid" package="herencia" visibility="public" xPosition="987.0" yPosition="364.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="capacity"/>
+          <Argument type="double" name="weight"/>
+          <Argument type="String" name="brand"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="model"/>
+          <Argument type="String" name="transmission"/>
+          <Argument type="String" name="vim"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBatteryCharge" returnType="double" visibility="public"/>
+        <Method name="getChargeVelocity" returnType="double" visibility="public"/>
+        <Method name="setBatteryCharge" returnType="double" visibility="public">
+          <Argument type="double" name="batteryCharge"/>
+        </Method>
+        <Method name="setChargeVelocity" returnType="double" visibility="public">
+          <Argument type="double" name="chargeVelocity"/>
+        </Method>
+        <Method name="getCylinderCapacity" returnType="int" visibility="public"/>
+        <Method name="getTankCapacity" returnType="double" visibility="public"/>
+        <Method name="getTypeCombustion" returnType="String" visibility="public"/>
+        <Method name="setCylinderCapacity" returnType="int" visibility="public">
+          <Argument type="int" name="cylinderCapacity"/>
+        </Method>
+        <Method name="setTankCapacity" returnType="double" visibility="public">
+          <Argument type="double" name="tankCapacity"/>
+        </Method>
+        <Method name="setTypeCombustion" returnType="String" visibility="public">
+          <Argument type="String" name="typeCombustion"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Combustion" package="herencia" visibility="public" xPosition="545.0" yPosition="354.0">
+      <Fields>
+        <Field name="cylinderCapacity" type="int" visibility="private"/>
+        <Field name="tankCapacity" type="double" visibility="private"/>
+        <Field name="typeCombustion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="cylinderCapacity"/>
+          <Argument type="double" name="tankCapacity"/>
+          <Argument type="String" name="typeCombustion"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="cylinderCapacity"/>
+          <Argument type="double" name="tankCapacity"/>
+          <Argument type="String" name="typeCombustion"/>
+          <Argument type="int" name="capacity"/>
+          <Argument type="double" name="weight"/>
+          <Argument type="String" name="brand"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="model"/>
+          <Argument type="String" name="transmission"/>
+          <Argument type="String" name="vim"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCylinderCapacity" returnType="int" visibility="public"/>
+        <Method name="setCylinderCapacity" returnType="int" visibility="public">
+          <Argument type="int" name="cylinderCapacity"/>
+        </Method>
+        <Method name="getTankCapacity" returnType="double" visibility="public"/>
+        <Method name="setTankCapacity" returnType="double" visibility="public">
+          <Argument type="double" name="tankCapacity"/>
+        </Method>
+        <Method name="getTypeCombustion" returnType="String" visibility="public"/>
+        <Method name="setTypeCombustion" returnType="String" visibility="public">
+          <Argument type="String" name="typeCombustion"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Electric" package="herencia" visibility="public" xPosition="1449.0" yPosition="408.0">
+      <Fields>
+        <Field name="batteryCharge" type="double" visibility="private"/>
+        <Field name="chargeVelocity" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="batteryCharge"/>
+          <Argument type="double" name="chargeVelocity"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="double" name="batteryCharge"/>
+          <Argument type="double" name="chargeVelocity"/>
+          <Argument type="int" name="capacity"/>
+          <Argument type="double" name="weight"/>
+          <Argument type="String" name="brand"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="model"/>
+          <Argument type="String" name="transmission"/>
+          <Argument type="String" name="vim"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBatteryCharge" returnType="double" visibility="public"/>
+        <Method name="setBatteryCharge" returnType="double" visibility="public">
+          <Argument type="double" name="batteryCharge"/>
+        </Method>
+        <Method name="getChargeVelocity" returnType="double" visibility="public"/>
+        <Method name="setChargeVelocity" returnType="double" visibility="public">
+          <Argument type="double" name="chargeVelocity"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vehicle" package="herencia" visibility="public" xPosition="976.0" yPosition="-186.0">
+      <Fields>
+        <Field name="capacity" type="int" visibility="private"/>
+        <Field name="weight" type="double" visibility="private"/>
+        <Field name="brand" type="String" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="model" type="String" visibility="private"/>
+        <Field name="transmission" type="String" visibility="private"/>
+        <Field name="vim" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="capacity"/>
+          <Argument type="double" name="weight"/>
+          <Argument type="String" name="brand"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="model"/>
+          <Argument type="String" name="transmission"/>
+          <Argument type="String" name="vim"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCapacity" returnType="int" visibility="public"/>
+        <Method name="setCapacity" returnType="int" visibility="public">
+          <Argument type="int" name="capacity"/>
+        </Method>
+        <Method name="getWeight" returnType="double" visibility="public"/>
+        <Method name="setWeight" returnType="double" visibility="public">
+          <Argument type="double" name="weight"/>
+        </Method>
+        <Method name="getBrand" returnType="String" visibility="public"/>
+        <Method name="setBrand" returnType="String" visibility="public">
+          <Argument type="String" name="brand"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="String" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getModel" returnType="String" visibility="public"/>
+        <Method name="setModel" returnType="String" visibility="public">
+          <Argument type="String" name="model"/>
+        </Method>
+        <Method name="getTransmission" returnType="String" visibility="public"/>
+        <Method name="setTransmission" returnType="String" visibility="public">
+          <Argument type="String" name="transmission"/>
+        </Method>
+        <Method name="getVim" returnType="String" visibility="public"/>
+        <Method name="setVim" returnType="String" visibility="public">
+          <Argument type="String" name="vim"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Sedan" package="" visibility="public" xPosition="323.0" yPosition="105.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="CombustionInterfaz" package="herencia" visibility="public" xPosition="666.0" yPosition="766.0">
+      <Methods>
+        <Method name="getCylinderCapacity" returnType="int" visibility="package"/>
+        <Method name="getTankCapacity" returnType="double" visibility="package"/>
+        <Method name="getTypeCombustion" returnType="String" visibility="package"/>
+        <Method name="setCylinderCapacity" returnType="int" visibility="package">
+          <Argument type="int" name="cylinderCapacity"/>
+        </Method>
+        <Method name="setTankCapacity" returnType="double" visibility="package">
+          <Argument type="double" name="tankCapacity"/>
+        </Method>
+        <Method name="setTypeCombustion" returnType="String" visibility="package">
+          <Argument type="String" name="typeCombustion"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="ElectricInterfaz" package="herencia" visibility="public" xPosition="1122.0" yPosition="766.0">
+      <Methods>
+        <Method name="getBatteryCharge" returnType="double" visibility="package"/>
+        <Method name="getChargeVelocity" returnType="double" visibility="package"/>
+        <Method name="setBatteryCharge" returnType="double" visibility="package">
+          <Argument type="double" name="batteryCharge"/>
+        </Method>
+        <Method name="setChargeVelocity" returnType="double" visibility="package">
+          <Argument type="double" name="chargeVelocity"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="herencia.Electric" target="herencia.Vehicle"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="herencia.Electric" target="herencia.ElectricInterfaz"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="herencia.Hybrid" target="herencia.ElectricInterfaz"/>
+    <IsRelation name="is" source="herencia.Hybrid" target="herencia.Vehicle"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="herencia.Hybrid" target="herencia.CombustionInterfaz"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="herencia.Combustion" target="herencia.CombustionInterfaz"/>
+    <IsRelation name="is" source="herencia.Combustion" target="herencia.Vehicle"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
